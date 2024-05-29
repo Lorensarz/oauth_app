@@ -1,0 +1,12 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: Ov23liCYIYo8AWH0zSiy
+            client-secret: a40b3611879f68571e1357f17cd0ce8357c40118
+            scope: read:user
+            redirect-uri: "{baseUrl}/login/oauth2/code/github"
+            authorization-grant-type: authorization_code
+            client-name: GitHub

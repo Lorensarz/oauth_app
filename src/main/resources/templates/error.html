@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Error</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+</head>
+<body>
+<div class="container">
+    <h1 class="display-3">Something went wrong</h1>
+    <p class="lead">Status code: <span th:text="${statusCode}"></span></p>
+    <p class="lead">Error message: <span th:text="${errorMessage}"></span></p>
+    <p class="lead">Request URI: <span th:text="${requestUri}"></span></p>
+    <p class="lead">HTTP Method: <span th:text="${httpMethod}"></span></p>
+    <div>
+        <h2>Stack Trace:</h2>
+        <pre th:text="${stackTrace}"></pre>
+    </div>
+    <a href="/" class="btn btn-primary">Go Home</a>
+</div>
+</body>
+</html>
